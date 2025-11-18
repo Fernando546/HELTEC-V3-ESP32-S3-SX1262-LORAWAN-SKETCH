@@ -27,10 +27,10 @@ Do **NOT** use the "Heltec WiFi LoRa 32(V3)" board definition. It causes the `SH
 Use the generic **ESP32S3 Dev Module** definition instead:
 
 1.  Go to **Tools > Board > esp32 > ESP32S3 Dev Module**.
-2.  Set the following options in the **Tools** menu:
+2.  I set the following options in the **Tools** menu:
     * **USB CDC On Boot:** `Disabled` (Crucial for seeing `Serial.print` output in my case).
     * **Flash Mode:** `DIO 80MHz` (More stable than QIO).
-    * **Partition Scheme:** `Huge APP (3MB No OTA/1MB SPIFFS)` (This is the most important fix for the `SHA-256` error).
+    * **Partition Scheme:** `Huge APP (3MB No OTA/1MB SPIFFS)`.
     * **Upload Speed:** `115200`.
 
 ### Part 2: TTN Device Setup (The `1.0.3` Fix)
